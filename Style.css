@@ -298,12 +298,14 @@ span{
 
 #text-1{
     border-bottom: 4px solid rgb(123,204,237);
+    margin-right: 10px;
     
 }
 
 #text-1, #text-2{
     float:left;
     padding: 10px;
+    cursor: pointer;
 
 
 }

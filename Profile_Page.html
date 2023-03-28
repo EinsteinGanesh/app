@@ -129,9 +129,9 @@
 
             <div class="col-9" id="status-wrapper">
                 <div id="text-wrapper" style="margin-left: 8px;">
-                    <div id="text-1" style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px;">Completed Test
+                    <div id="text-1" onclick="underline1()" style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px;">Completed Test
                     </div>
-                    <div id="text-2">Ongoing Test</div>
+                    <div id="text-2" onclick="underline()" style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px;">Ongoing Test</div>
                 </div>
                 <div id="assessment-wrapper">
                     <div class="skill-asst" style="margin-bottom: 15px;">
@@ -278,6 +278,21 @@
         </div>
 
     </div>
+
+    <script>
+        var OngoingTest = document.getElementById("text-2");
+        var CompletedTest = document.getElementById("text-1");
+        
+        function underline(){
+            OngoingTest.style.borderBottom="4px solid rgb(123,204,237)";
+            CompletedTest.style.borderBottom="4px solid rgb(255,255,255)";
+        }
+
+        function underline1(){
+            OngoingTest.style.borderBottom="4px solid rgb(255,255,255)";
+            CompletedTest.style.borderBottom="4px solid rgb(123,204,237)" ;
+        }
+    </script>
 </body>
 
 </html>
