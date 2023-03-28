@@ -24,8 +24,23 @@
 
 #maincontent{
     height: 750px;
-    border: 1px solid red;
+    
     float: left;
+}
+
+#maincontent::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#name-second-half{
+   
+    float: left;
+    padding-left: 117px;
+    position: relative;
+    width: 50%;
+    height: 90px;
 }
 
 
@@ -39,7 +54,7 @@
 .heading-bar{
     width: 100%;
     height: 90px;
-    
+    float: left;
     border: 1px solid rgb(170, 168, 168);
     background-color: rgb(239, 249, 246);
 }
@@ -59,8 +74,11 @@ padding-left: 25px;
 
 #name-half{
    
-    border: 1px solid gray;
+   
     height: 90px;
+    float: left;
+    
+   
     
 }
 
@@ -147,6 +165,7 @@ span{
     width: 60%;
     margin: auto;
      border-radius: 8px;
+     margin-top: 10px;
     
 }
 
@@ -266,7 +285,7 @@ span{
 }
 
 #status-wrapper{
-    border: 1px solid yellowgreen;
+    
     float: left;
     height: 660px;
 }
@@ -361,3 +380,63 @@ span{
     height: 10px;
     
 }
+
+
+#search-bar{
+    float: left;
+    margin-right: 20px;
+   
+    
+}
+
+#s-txt{
+    width: 256px;
+    margin-top: 25px;
+    margin-right: 5px;
+    border-radius: 5px;
+    height: 33px;
+}
+
+.icon {
+    padding-left: 25px;
+    background: url(search_FILL0_wght400_GRAD0_opsz48.png) no-repeat left;
+    background-size: 20px;
+    float: left;
+    
+  }
+
+#bell-icon{
+    width: 30px;
+    height: 30px;
+    background-image: url('notification.png');
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-right: 10px;
+    margin-top: 28px;
+   
+}
+
+#kannini-logo{
+    width: 40px;
+    height: 40px;
+    background-image: url('icon.jpeg');
+    background-size: cover;
+    background-position: center;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-right: 8px;
+    
+    
+}
+
+#profile-name{
+    float: left;
+   
+    font-size: medium;
+    margin-top: 28px;
+   
+}
+
