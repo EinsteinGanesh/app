@@ -15,7 +15,9 @@
     <!-- ICON -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--JQUERY-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,13 +41,13 @@
                         <input type="text" class="icon" placeholder="Search here" id="s-txt">
                     </div>
 
-                    <div id="bell-icon" >
+                    <div id="bell-icon">
 
                     </div>
-                        <div id="kannini-logo" >
+                    <div id="kannini-logo">
 
-                        </div>
-                    <div id="profile-name" >
+                    </div>
+                    <div id="profile-name">
                         <span>Subramaniyam</span>
                     </div>
 
@@ -129,9 +131,11 @@
 
             <div class="col-9" id="status-wrapper">
                 <div id="text-wrapper" style="margin-left: 8px;">
-                    <div id="text-1" onclick="underline1()" style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px;">Completed Test
+                    <div id="text-1" onclick="underline1()"
+                        style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px;">Completed Test
                     </div>
-                    <div id="text-2" onclick="underline()" style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px;">Ongoing Test</div>
+                    <div id="text-2" onclick="underline()"
+                        style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px;">Ongoing Test</div>
                 </div>
                 <div id="assessment-wrapper">
                     <div class="skill-asst" style="margin-bottom: 15px;">
@@ -163,9 +167,9 @@
                                 <span class="material-symbols-outlined">
                                     schedule
                                 </span>
-                                Submitted on: 27th July 2022
+                                <span class="submitted-text">Submitted on: 27th July 2022</span>
                             </div>
-                            <div class="create-content">
+                            <div class="create-content bookmark">
                                 <span class="material-symbols-outlined">
                                     bookmark
                                 </span>
@@ -208,9 +212,9 @@
                                 <span class="material-symbols-outlined">
                                     schedule
                                 </span>
-                                Submitted on: 27th July 2022
+                                <span class="submitted-text">Submitted on: 27th July 2022</span>
                             </div>
-                            <div class="create-content">
+                            <div class="create-content bookmark">
                                 <span class="material-symbols-outlined">
                                     bookmark
                                 </span>
@@ -224,7 +228,7 @@
 
                     </div>
 
-                    <div class="skill-asst">
+                    <div class="skill-asst" id="skill-asst-box">
                         <div class="inside-text col-9">
                             <h5>User-Experience Skill Assessment</h5>
                             <p style="margin-top: 0px;"><strong>Topics: </strong>Information Architecture, Information
@@ -255,7 +259,7 @@
                                 </span>
                                 Submitted on: 27th July 2022
                             </div>
-                            <div class="create-content">
+                            <div class="create-content ">
                                 <span class="material-symbols-outlined">
                                     bookmark
                                 </span>
@@ -282,15 +286,38 @@
     <script>
         var OngoingTest = document.getElementById("text-2");
         var CompletedTest = document.getElementById("text-1");
-        
-        function underline(){
-            OngoingTest.style.borderBottom="4px solid rgb(123,204,237)";
-            CompletedTest.style.borderBottom="4px solid rgb(255,255,255)";
+        var skillbox = document.getElementById("skill-asst-box");
+        var bkmark = document.getElementsByClassName("bookmark");
+        var subText = document.getElementsByClassName("submitted-text");
+
+        function underline() {
+            OngoingTest.style.borderBottom = "4px solid rgb(123,204,237)";
+            CompletedTest.style.borderBottom = "4px solid rgb(255,255,255)";
+
+            skillbox.style.display = "none";
+
+
+            for (var i = 0; i < bkmark.length; i++) {
+                bkmark[i].style.display = "none";
+            }
+
+        $(".submitted-text").html("Submit Before: 17th Aug 2022");
+        $(".button").html("View Details");
+
         }
 
-        function underline1(){
-            OngoingTest.style.borderBottom="4px solid rgb(255,255,255)";
-            CompletedTest.style.borderBottom="4px solid rgb(123,204,237)" ;
+        function underline1() {
+            OngoingTest.style.borderBottom = "4px solid rgb(255,255,255)";
+            CompletedTest.style.borderBottom = "4px solid rgb(123,204,237)";
+            skillbox.style.display = "block";
+            for (var i = 0; i < bkmark.length; i++) {
+                bkmark[i].style.display = "block";
+
+
+            }
+
+            $(".submitted-text").html("Submitted on: 27th July 2022"); 
+            $(".button").html("View Results"); 
         }
     </script>
 </body>
