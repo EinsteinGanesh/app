@@ -37,3 +37,7 @@ function underline1() {
     $(".submitted-text").html("Submitted on: 27th July 2022"); 
     $(".button").html("View Results"); 
 }
+
+function hello(){
+    console.log("hello world")
+}
