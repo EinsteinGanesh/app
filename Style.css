@@ -508,3 +508,18 @@ span{
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 1463px) {
+    #name-second-half {
+      padding-left: 80px;
+    }
+  }
+
+@media screen and (max-width: 1397px) {
+    #name-second-half {
+      padding-left: 0px;
+    }
+  }
+
+*{
+    box-sizing: border-box;
+}
