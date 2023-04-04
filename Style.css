@@ -38,7 +38,7 @@
 #name-second-half{
    
     float: left;
-    padding-left: 117px;
+    padding-left: 100px;
     position: relative;
     width: 50%;
     height: 90px;
@@ -451,3 +451,18 @@ span{
    
 }
 
+@media screen and (max-width: 1463px) {
+    #name-second-half {
+      padding-left: 80px;
+    }
+  }
+
+@media screen and (max-width: 1397px) {
+    #name-second-half {
+      padding-left: 0px;
+    }
+  }
+
+*{
+    box-sizing: border-box;
+}
