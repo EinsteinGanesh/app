@@ -18,8 +18,12 @@
     <!--JQUERY-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<!--JQUERY-->
-<link rel="script" href="action.js">
+    <!--JQUERY-->
+    <link rel="script" href="action.js">
+
+    <!--Font Awesome-->
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
 </head>
@@ -141,7 +145,8 @@
                         style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px;">Completed Test
                     </div>
                     <div id="text-2" onclick="underline()"
-                        style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px; color: rgb(203,208,214);">Ongoing Test</div>
+                        style="padding-bottom: 2px; padding-left: 2px; padding-right: 2px; color: rgb(203,208,214);">
+                        Ongoing Test</div>
                 </div>
                 <div id="assessment-wrapper">
                     <div class="skill-asst" style="margin-bottom: 15px;">
@@ -151,10 +156,10 @@
                                 Design, Interaction Design, Mobile UX design, Patterns & Antipatterns, Portfolio Design
                             </p>
                         </div>
-                        <div class="button-view col-3" >
+                        <div class="button-view col-3">
                             <a class="button" id="myBtn">View Results</a>
-         
-         
+
+
                         </div>
                         <hr>
 
@@ -243,8 +248,8 @@
                                 Design, Interaction Design, Mobile UX design, Patterns & Antipatterns, Portfolio Design
                             </p>
                         </div>
-                        <div class="button-view col-3" >
-                            <a class="button" >View Results</a>
+                        <div class="button-view col-3">
+                            <a class="button">View Results</a>
                         </div>
                         <hr>
 
@@ -293,15 +298,77 @@
     </div>
 
     <!-- The Modal -->
-<div id="myModal" class="modal">
+    <div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Some text in the Modal..</p>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="content-wrapper">
+                <div id="box-head" style="margin-bottom: 0px" ;>
+                    <span>Assessment Result</span>
+                </div>
+            </div>
+            <hr style="margin-top: 0px" ;>
+            <div id="model-firsthalf-wrapper">
+                <div>
+                    <span class="material-symbols-outlined" style="color: rgb(64,161,212)">
+                        badge
+                    </span> <span id="name-employe"> Employee Details</span>
+
+                    <span id="Deena">Deen Mohammad</span>
+                </div>
+                <div id="ast-name">
+                    <span class="material-symbols-outlined">
+                        quiz
+                    </span>
+                    <span>Assessment Details</span>
+                    <div>ASS021_UX_005</div>
+                </div>
+
+
+                <div id="model-first-half">
+                    <div class="col-6" id="employee-info">
+
+                        <div class="details-left col-3" id="employee-firsthalf">
+                            <span class="text-model">Emp Code</span>
+                            <span class="text-model">Email Address </span>
+                            <span class="text-model">Department</span>
+                            <span class="text-model">Designation</span>
+                        </div>
+                        <div id="employee-secondhalf" class="col-6">
+                            <span class="text-model-right">2808</span>
+                            <span class="text-model-right">deen.mohammed@kanini.com </span>
+                            <span class="text-model-right">UXUI</span>
+                            <span class="text-model-right">Associate</span>
+                        </div>
+                    </div>
+                    <div class="astmt-dails col-6">
+
+                        <div id="Assessment-info">
+                            <div id="employee-info-left" class="col-4">
+
+                                <Span class="text-left">Level</Span>
+                                <Span class="text-left">No. of Topics</Span>
+                                <Span class="text-left">No of Questions</Span>
+                                <Span class="text-left">Creating on</Span>
+
+                            </div>
+
+                            <div id="employee-info-right" class="col-5">
+                                <Span class="text-right">Basic</Span>
+                                <Span class="text-right">3</Span>
+                                <Span class="text-right">30</Span>
+                                <Span class="text-right">21-07-2022</Span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
-  
-  </div>
 
     <script src="action.js"></script>
 
@@ -311,4 +378,3 @@
 
 
 </html>
-
