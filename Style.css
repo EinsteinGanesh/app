@@ -454,7 +454,7 @@ span{
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -471,9 +471,9 @@ span{
   .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     border: 1px solid #888;
-    width: 40%;
+    width: 55%;
   }
   
   /* The Close Button */
@@ -522,4 +522,95 @@ span{
 
 *{
     box-sizing: border-box;
+}
+
+
+
+
+#box-head{
+    border: 1px solid blue;
+    padding-bottom: 20px;
+    margin: 20px;
+
+}
+
+#employee-firsthalf{
+    border: 1px solid red;
+}
+
+.text-model{
+    display: block;
+    font-size: small;
+    color:rgb(72, 105, 112);
+}
+
+#model-firsthalf-wrapper{
+    border: 1px solid green;
+    background-color: rgb(187,228,234);
+    
+}
+
+#employee-firsthalf{
+    border: 1px solid black;
+    display: inline-block;
+    
+    
+}
+
+#employee-secondhalf{
+    border: 1px solid goldenrod;
+    display: inline-block;
+    
+    
+
+}
+#employee-info{
+    border: 1px solid rgb(28, 5, 69);
+    display: flex;
+    flex-direction: row;
+
+   
+}
+
+#Deena{
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    color:rgb(78,96,104);
+}
+
+.text-model-right{
+    display: block;
+    font-size: small;
+    color: rgb(44, 54, 57);
+    padding-left: 5px;
+    
+}
+
+#name-employe{
+    color: rgb(64,161,212);
+}
+
+.astmt-dails{
+    border: 1px solid blueviolet;
+}
+
+#Assessment-info{
+    display: flex;
+
+}
+
+.text-left{
+    display: block;
+    font-size: small;
+}
+
+.text-right{
+    display: block;
+    font-size: small;
+}
+
+#model-first-half{
+    border: 1px solid grey;
+    display: flex;
 }
