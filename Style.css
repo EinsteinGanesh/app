@@ -614,3 +614,26 @@ span{
     border: 1px solid grey;
     display: flex;
 }
+
+#upper-heading{
+    display: flex;
+}
+
+.text-card{
+    font-size: x-small;
+}
+
+.textanswer{
+    font-size: small;
+}
+
+#ast-passed{
+    font-size: 13px;
+}
+
+.container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
