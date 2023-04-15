@@ -373,7 +373,7 @@ span{
 
 .create-wrapper{
     width: fit-content;
-    border-top: 1px solid gray;
+    
 }
 
 .create-wrapper::after{
@@ -472,7 +472,7 @@ span{
     background-color: #fefefe;
     margin: auto;
     padding: 0px;
-    border: 1px solid #888;
+   border-radius: 10px;
     width: 55%;
   }
   
@@ -532,6 +532,7 @@ span{
    
     background-color: rgb(187,228,234);
     padding: 20px;
+    border-radius: 10px 10px 0 0 ;
     
 
 }
