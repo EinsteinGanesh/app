@@ -1,16 +1,17 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
-  "main": "action.js",
+  "description": "test product",
+  "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha || true"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ganesh",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.0-alpha3",
-    "firebase": "^9.19.1"
+    "firebase": "^9.19.1",
+    "mocha": "^10.2.0"
   }
 }
