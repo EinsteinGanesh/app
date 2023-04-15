@@ -373,7 +373,7 @@ span{
 
 .create-wrapper{
     width: fit-content;
-    
+    border-top: 1px solid gray;
 }
 
 .create-wrapper::after{
@@ -454,7 +454,7 @@ span{
 
 /* The Modal (background) */
 .modal {
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -478,10 +478,11 @@ span{
   
   /* The Close Button */
   .close {
-    color: #aaaaaa;
+    color: #171515;
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
+    margin-right: 14px;
   }
   
   .close:hover,
@@ -547,8 +548,11 @@ span{
 #model-firsthalf-wrapper{
     
     background-color: rgb(187,228,234);
+   
     
 }
+
+
 
 #employee-firsthalf{
    
@@ -578,7 +582,7 @@ span{
     font-weight: 600;
     font-size: 14px;
     color:rgb(78,96,104);
-    margin-left: 30px;
+    margin-left: 6px;
     margin-top: 8px;
     margin-bottom: 8px;
 }
