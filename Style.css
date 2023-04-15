@@ -528,46 +528,47 @@ span{
 
 
 #box-head{
-    border: 1px solid blue;
-    padding-bottom: 20px;
-    margin: 20px;
+   
+    background-color: rgb(187,228,234);
+    padding: 20px;
+    
 
 }
 
-#employee-firsthalf{
-    border: 1px solid red;
-}
+
 
 .text-model{
     display: block;
     font-size: small;
     color:rgb(72, 105, 112);
+    margin: 5px;
 }
 
 #model-firsthalf-wrapper{
-    border: 1px solid green;
+    
     background-color: rgb(187,228,234);
     
 }
 
 #employee-firsthalf{
-    border: 1px solid black;
+   
     display: inline-block;
     
     
 }
 
 #employee-secondhalf{
-    border: 1px solid goldenrod;
+   
     display: inline-block;
     
     
 
 }
 #employee-info{
-    border: 1px solid rgb(28, 5, 69);
+ 
     display: flex;
     flex-direction: row;
+    padding-left: 25px;
 
    
 }
@@ -575,8 +576,11 @@ span{
 #Deena{
     display: block;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 14px;
     color:rgb(78,96,104);
+    margin-left: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .text-model-right{
@@ -584,6 +588,7 @@ span{
     font-size: small;
     color: rgb(44, 54, 57);
     padding-left: 5px;
+    margin: 5px;
     
 }
 
@@ -591,9 +596,7 @@ span{
     color: rgb(64,161,212);
 }
 
-.astmt-dails{
-    border: 1px solid blueviolet;
-}
+
 
 #Assessment-info{
     display: flex;
@@ -603,15 +606,17 @@ span{
 .text-left{
     display: block;
     font-size: small;
+    margin: 5px;
 }
 
 .text-right{
     display: block;
     font-size: small;
+    margin: 5px;
 }
 
 #model-first-half{
-    border: 1px solid grey;
+    
     display: flex;
 }
 
@@ -621,14 +626,28 @@ span{
 
 .text-card{
     font-size: x-small;
+    margin-left: 19px;
+    margin-bottom: 3px;
+    
 }
 
 .textanswer{
     font-size: small;
+    margin-left: 19px;
+    margin-bottom: 3px;
+    
 }
 
 #ast-passed{
-    font-size: 13px;
+    font-size: 14px;
+    color: rgb(82,184,138);
+    
+}
+
+#rst-top{
+    display: block;
+    margin-top: 8px;
+    margin-left: 10px;
 }
 
 .circle-wrap {
@@ -639,7 +658,7 @@ span{
     border-radius: 50%;
     margin-left: 115px;
     position: relative;
-    top:-106px
+    top:-100px;
   }
 
   .circle-wrap .circle .mask,
@@ -689,8 +708,87 @@ span{
   }
 
   .card-left{
-    border: 1px solid black;
+    
     width: 300px;
     height: 250px;
     padding: 5px;
+    margin-left: 34px;
+    margin-top: 25px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
+
+  .timer-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 25px;
+    width: 46%;
+  }
+
+  #point{
+    display: block;
+    font-size: small;
+    color: #68c199;
+    top: -108px;
+    position: relative;
+  }
+
+  #point-head{
+    display: block;
+    position: relative;
+    top: -8px;
+  }
+
+  .progress-container{
+    height: 5px;
+    background-color: rgb(234,236,238);
+    width: 60%;
+    border-radius: 2px;
+    margin-left: 46px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+  }
+
+  .inner-fill{
+    width: 10%;
+    height: 5px;
+    background-color: #1589cc;
+    border-radius: 2px;
+  }
+
+  .tme{
+    display: block;
+    font-size: medium;
+    margin-bottom:5px ; 
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+ .table-left{
+    font-size: small;
+    
+ }
+
+ .table-right{
+    font-size: small;
+    font-weight: bold;
+ }
+
+ #timings{
+    margin-left: 46px;
+    margin-right: 10px;
+    
+ }
+
+ .performence-card{
+    display: flex;
+ }
+
+ td{
+    padding-bottom: 1em;
+ }
+
+ #timer-bomma{
+    margin-bottom: 20px;
+ }

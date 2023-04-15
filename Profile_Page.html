@@ -303,15 +303,16 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
+
             <div class="content-wrapper">
-                <div id="box-head" style="margin-bottom: 0px" ;>
+                <div id="box-head" >
                     <span>Assessment Result</span>
                 </div>
             </div>
-            <hr style="margin-top: 0px" ;>
+            <hr style="margin-top:0px;margin-bottom:0px;" >
             <div id="model-firsthalf-wrapper">
                 <div id="upper-heading">
-                    <div class="col-6">
+                    <div class="col-6" style="padding-left: 25px;">
                         <span class="material-symbols-outlined" style="color: rgb(64,161,212)">
                             badge
                         </span> <span id="name-employe"> Employee Details</span>
@@ -371,54 +372,86 @@
                 <div class="performence-card">
 
                     <div class="card-left">
-                    <span>Result</span>
-                    <div>
-                        <span class="material-symbols-outlined" style="font-size: 20px;">
-                            priority
-                        </span>
+                        <span id="rst-top">Result</span>
+                        <div>
+                            <span class="material-symbols-outlined"
+                                style="font-size: 20px; color: rgb(82,184,138); margin-left: 5px;">
+                                priority
+                            </span>
 
-                        <span id="ast-passed">Assessment Passed</span>
-                    </div>
-
-                    <div class="text-card">Correct Answer</div>
-                    <div class="textanswer">27/30</div>
-
-
-                    <div class="text-card">Wrong Answer</div>
-                    <div class="textanswer">02/30</div>
-                    <div class="text-card">Skipped Answer</div>
-                    <div class="textanswer">01/30</div>
-
-                    <div class="circle-wrap">
-                        <div class="circle">
-                          
-                          <div class="mask full">
-                            <div class="fill"></div>
-                          </div>
-                         
-                          <div class="mask half">
-                            <div class="fill"></div>
-                          </div>
-                          
-                          <div class="inside-circle">
-                            <span style="display: block;">85%</span>
-                          </div>
-                          
+                            <span id="ast-passed">Assessment Passed</span>
                         </div>
 
+                        <div class="text-card" style="margin-top: 5px;">Correct Answer</div>
+                        <div class="textanswer"><strong>27</strong>/30</div>
 
 
+                        <div class="text-card">Wrong Answer</div>
+                        <div class="textanswer"><strong>02</strong>/30</div>
+                        <div class="text-card">Skipped Answer</div>
+                        <div class="textanswer"><strong>01</strong>/30</div>
+
+                        <div class="circle-wrap">
+                            <div class="circle">
+
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                </div>
+
+                                <div class="inside-circle">
+                                    <span id= "point-head">85 <span style="font-size: medium;">%</span></span>
+                                    <span id="point">60 points</span>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="timer-card"style="margin-left: 45px" >
+                        <span class="tme">Timer</span>
+                        <div id="timer-bomma">
+                        <span class="material-symbols-outlined" style="margin-right: 10px;  margin-left: 10px; color: #2e95d1 ;">
+                            timer
+                            </span> <span style="color: #2e95d1 ;">Total Time</span></div>
+
+                            <span id="timings">00:00:12</span> <span>/</span> <span style="margin: 10px;">00:27:21</span>
+                            <div class="progress-container">
+                                <div class="inner-fill"><span id="round"></span></div></div>
+
+                            <table width="87%" style=" margin-left: 46px;">
+                                <tr>
+                                    <td class="table-left">Start time</td>
+                                    <td class="table-right">05:35pm</td>
+                                    <td class="table-left">Question</td>
+                                    <td class="table-right">01</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-left">End Time</td>
+                                    <td class="table-right">06:02pm</td>
+                                    <td class="table-left">Completion on</td>
+                                    <td class="table-right">26-07-2022</td>
+                                </tr>
+
+                            </table>
+
+        
+                    </div>
                 </div>
-            </div>
+
+
             </div>
 
 
         </div>
 
-
-    </div>
-
-    <script src="action.js"></script>
+        <script src="action.js"></script>
 
 </body>
 
