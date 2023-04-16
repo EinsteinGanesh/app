@@ -317,6 +317,10 @@ span{
 
 }
 
+#text-2{
+    color: rgb(203,208,214);
+}
+
 
 
 .skill-asst{
@@ -382,6 +386,13 @@ span{
     clear: both;
 }
 
+#horizontal-line
+{
+    margin: 0;
+   border-bottom: 0px;
+   border-top: 1px solid #1589cc;
+  
+}
 .create-content{
     float: left;
     font-size: 11px;
@@ -549,7 +560,8 @@ span{
 #model-firsthalf-wrapper{
     
     background-color: rgb(187,228,234);
-   
+   padding-top: 10px;
+   padding-bottom: 10px;
     
 }
 
@@ -580,6 +592,15 @@ span{
 
 #Deena{
     display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color:rgb(78,96,104);
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#course-name{
     font-weight: 600;
     font-size: 14px;
     color:rgb(78,96,104);

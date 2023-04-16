@@ -7,7 +7,7 @@ var subText = document.getElementsByClassName("submitted-text");
 function underline() {
     OngoingTest.style.borderBottom = "4px solid rgb(123,204,237)";
     CompletedTest.style.borderBottom = "4px solid rgb(255,255,255)";
-    OngoingTest.style.color="black"
+    
     skillbox.style.display = "none";
    
 
@@ -19,6 +19,8 @@ $(".submitted-text").html("Submit Before: 17th Aug 2022");
 $(".button").html("View Details");
 
 
+  OngoingTest.style.color="black";
+  CompletedTest.style.color="rgb(203,208,214)";
 
 }
 
@@ -26,10 +28,12 @@ function underline1() {
     OngoingTest.style.borderBottom = "4px solid rgb(255,255,255)";
     CompletedTest.style.borderBottom = "4px solid rgb(123,204,237)";
     skillbox.style.display = "block";
-
+CompletedTest.style.color="black";
+OngoingTest.style.color="rgb(203,208,214)";
   
     for (var i = 0; i < bkmark.length; i++) {
         bkmark[i].style.display = "block";
+        
 
 
     }
@@ -38,9 +42,7 @@ function underline1() {
     $(".button").html("View Results"); 
 }
 
-function hello(){
-    console.log("hello world")
-}
+
 
 var modal = document.getElementById("myModal");
 
@@ -69,4 +71,3 @@ window.onclick = function(event) {
   }
 }
 
-console.log("Hello")

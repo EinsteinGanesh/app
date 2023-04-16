@@ -1,8 +1,5 @@
-let person = {
-    firstname: "Tony",
-    lastname:"Stark",
-    age:"25"
-
-};
-console.log(person.firstname);
-
+var sub = [2, 4 ,5];
+var a
+for (a in sub){
+    console.log(sub[a]);
+}
